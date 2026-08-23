@@ -7,6 +7,15 @@
   <title>Gen Green Newark | Survey</title>
 
   <link rel="stylesheet" href="css/style.css" />
+
+
+ <!-- CLOUDFLARE TURNSTILE -->
+  <script
+    src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+    async
+    defer>
+  </script>
+
 </head>
 
 <body class="survey-body">
@@ -765,17 +774,37 @@
       </div>
 
 
-      <div class="survey-progress-bar">
-
-        <div
-          id="surveyProgressFill"
-          class="survey-progress-fill"
-        ></div>
-
-      </div>
 
 
-     <button
+
+<div class="survey-progress-bar">
+
+  <div
+    id="surveyProgressFill"
+    class="survey-progress-fill"
+  ></div>
+
+</div>
+
+
+<!-- =====================================
+     CLOUDFLARE TURNSTILE
+====================================== -->
+
+<div class="captcha-area">
+
+  <div
+    class="cf-turnstile"
+    data-sitekey="0x4AAAAAAEZQFRGSdg_nkT_k"
+    data-callback="onCaptchaSuccess"
+    data-expired-callback="onCaptchaExpired"
+    data-error-callback="onCaptchaError"
+  ></div>
+
+</div>
+
+
+<button
   type="button"
   id="finishSurveyButton"
   class="finish-survey-button"
@@ -784,13 +813,24 @@
   Submit My Vote →
 </button>
 
+
+
+
+
     </div>
 
   </footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
 <script src="js/survey.js"></script>
+
+<script
+  src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+  async
+  defer
+></script>
 
 </body>
 </html>

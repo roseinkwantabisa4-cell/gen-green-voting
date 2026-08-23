@@ -45,6 +45,60 @@ const TOTAL_QUESTIONS = 8;
 
 
 
+/* ===========================================
+   CLOUDFLARE TURNSTILE
+=========================================== */
+
+let captchaToken = null;
+
+
+/* CAPTCHA SUCCESS */
+
+window.onCaptchaSuccess =
+  function(token) {
+
+    captchaToken = token;
+
+    console.log(
+      "Human verification complete."
+    );
+
+    updateSurveyProgress();
+
+  };
+
+
+/* CAPTCHA EXPIRED */
+
+window.onCaptchaExpired =
+  function() {
+
+    captchaToken = null;
+
+    surveyError.textContent =
+      "Human verification expired. Please verify again.";
+
+    updateSurveyProgress();
+
+  };
+
+
+/* CAPTCHA ERROR */
+
+window.onCaptchaError =
+  function() {
+
+    captchaToken = null;
+
+    surveyError.textContent =
+      "Human verification failed. Please try again.";
+
+    updateSurveyProgress();
+
+  };
+
+
+
 
 
 
@@ -103,7 +157,11 @@ async function getSupabaseUser() {
     error
   } =
     await supabaseClient.auth
-      .signInAnonymously();
+  .signInAnonymously({
+    options: {
+      captchaToken: captchaToken
+    }
+  });
 
 
   if (error) {
@@ -259,16 +317,18 @@ function updateSurveyProgress() {
      ENABLE SUBMIT BUTTON
   ====================================== */
 
-  if (answered === TOTAL_QUESTIONS) {
+if (
+  answered === TOTAL_QUESTIONS &&
+  captchaToken
+) {
 
-    finishSurveyButton.disabled = false;
+  finishSurveyButton.disabled = false;
 
-    finishSurveyButton.classList.add(
-      "ready"
-    );
+  finishSurveyButton.classList.add(
+    "ready"
+  );
 
-
-    surveyError.textContent = "";
+  surveyError.textContent = "";
 
   }
 
