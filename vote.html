@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gen Green Newark | Vote</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="vote-body">
+
+  <!-- ================================
+       TOP HEADER
+  ================================= -->
+
+  <header class="vote-header">
+
+    <a href="index.html" class="back-home">
+      ← Back
+    </a>
+
+    <img
+      src="images/gen-green.png"
+      alt="Gen Green"
+      class="vote-logo"
+    />
+
+    <div class="vote-progress">
+      <span id="selectionCount">0</span>/5 selected
+    </div>
+
+  </header>
+
+
+  <!-- ================================
+       INTRO
+  ================================= -->
+
+  <section class="vote-intro">
+
+    <p class="vote-eyebrow">
+      YOUR VOICE. YOUR NEWARK.
+    </p>
+
+    <h1>
+      Pick Your Top 5 Ideas
+    </h1>
+
+    <p>
+      Choose the five ideas you would most like to see happen in Newark.
+      You can select more than one idea from the same category.
+    </p>
+
+
+    <!-- SELECTION DOTS -->
+
+    <div class="selection-dots">
+
+      <span class="selection-dot"></span>
+      <span class="selection-dot"></span>
+      <span class="selection-dot"></span>
+      <span class="selection-dot"></span>
+      <span class="selection-dot"></span>
+
+    </div>
+
+  
+
+  </section>
+
+
+<main class="ballot-board">
+
+    <!-- =========================
+         GREEN SPACES
+    ========================== -->
+
+    <section class="ballot-column">
+
+      <div class="ballot-category-image">
+        <img
+          src="images/green-spaces.png"
+          alt="Green Spaces"
+        />
+      </div>
+
+      <h2>Green Spaces</h2>
+
+      <div class="ballot-options">
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="flowers-planters"
+          data-title="Flowers & Planters"
+          data-category="Green Spaces"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Flowers & Planters</strong>
+
+            <small>
+              Beautify the city with flowers and planters and host
+              seed, flower and tree giveaways.
+            </small>
+          </span>
+        </button>
+
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="fruit-hubs"
+          data-title="Fruit Hubs"
+          data-category="Green Spaces"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Fruit Hubs</strong>
+
+            <small>
+              Provide access to more affordable fruits and host
+              city giveaways for residents.
+            </small>
+          </span>
+        </button>
+
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="community-gardens"
+          data-title="Large Community Gardens"
+          data-category="Green Spaces"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Large Community Gardens</strong>
+
+            <small>
+              Create 1–2 large community gardens with security and amenities
+              to support recreation, education and shared community use.
+            </small>
+          </span>
+        </button>
+
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="micro-gardens"
+          data-title="Micro Gardens"
+          data-category="Green Spaces"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Micro Gardens</strong>
+
+            <small>
+              Fund 10–20 micro gardens across the city, schools,
+              parks and community spaces.
+            </small>
+          </span>
+        </button>
+
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="trees"
+          data-title="Trees"
+          data-category="Green Spaces"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Trees</strong>
+
+            <small>
+              Plant more trees around the city to help improve air quality
+              and provide more shade.
+            </small>
+          </span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CLEAN UPS & WASTE
+    ========================== -->
+
+    <section class="ballot-column">
+
+      <div class="ballot-category-image">
+        <img
+          src="images/cleanups.png"
+          alt="Clean Ups and Waste"
+        />
+      </div>
+
+      <h2>Clean Ups & Waste</h2>
+
+      <div class="ballot-options">
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="citywide-cleanups"
+          data-title="Citywide Cleanups"
+          data-category="Clean Ups & Waste"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Citywide Cleanups</strong>
+
+            <small>
+              Gathering volunteers around the community to help beautify
+              neighborhoods. Residents are able to have a direct impact
+              on their community.
+            </small>
+          </span>
+        </button>
+
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="accessible-trash-cans"
+          data-title="Accessible Trash Cans"
+          data-category="Clean Ups & Waste"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Accessible Trash Cans</strong>
+
+            <small>
+              Around high traffic areas and/or schools we can add more
+              accessible trash cans to limit littering.
+            </small>
+          </span>
+        </button>
+
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="passaic-cleanups"
+          data-title="Passaic River Cleanups"
+          data-category="Clean Ups & Waste"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Passaic River Cleanups</strong>
+
+            <small>
+              Community cleanups along the Passaic River to create
+              a safer and more welcoming environment for the community
+              and wildlife.
+            </small>
+          </span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ART
+    ========================== -->
+
+    <section class="ballot-column">
+
+      <div class="ballot-category-image">
+        <img
+          src="images/art.png"
+          alt="Art"
+        />
+      </div>
+
+      <h2>Art</h2>
+
+      <div class="ballot-options">
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="art-installation"
+          data-title="Art Installation"
+          data-category="Art"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Art Installation</strong>
+
+            <small>
+              An art installation designed by students in downtown Newark
+              that demonstrates the life cycle of plants.
+            </small>
+          </span>
+        </button>
+
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="comic-book"
+          data-title="Sustainability Comic Book"
+          data-category="Art"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Sustainability Comic Book</strong>
+
+            <small>
+              Students will design a sustainability comic book.
+              Through storytelling, art and science exploration,
+              students will learn about the vital role plants play
+              in keeping our environment healthy.
+            </small>
+          </span>
+        </button>
+
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="mural"
+          data-title="Mural"
+          data-category="Art"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Mural</strong>
+
+            <small>
+              A mural around 13th Avenue School celebrating nature.
+              By revitalizing a dull area, we can create an environment
+              that fosters pride and encourages care for the planet.
+            </small>
+          </span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CLUBS + TECH
+    ========================== -->
+
+    <section class="ballot-column">
+
+      <div class="ballot-category-image">
+        <img
+          src="images/clubs.png"
+          alt="Clubs"
+        />
+      </div>
+
+      <h2>Clubs</h2>
+
+      <div class="ballot-options">
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="environmental-club"
+          data-title="Environmental Club"
+          data-category="Clubs & Tech"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Environmental Club</strong>
+
+            <small>
+              Create environmental clubs in schools for students to engage
+              and learn more about sustainability and the environment.
+            </small>
+          </span>
+        </button>
+
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="climate-campaign"
+          data-title="Youth-Led Climate Campaign"
+          data-category="Clubs & Tech"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Youth-Led Climate Campaign</strong>
+
+            <small>
+              Lead a youth-inspired communications campaign that empowers
+              residents and drives a citywide effort to initiate and sustain
+              a long-term clean-up initiative.
+            </small>
+          </span>
+        </button>
+
+      </div>
+
+
+      <div class="tech-divider">
+
+        <div class="ballot-category-image tech-image">
+          <img
+            src="images/tech.png"
+            alt="Tech"
+          />
+        </div>
+
+        <h2>Tech</h2>
+
+      </div>
+
+
+      <div class="ballot-options">
+
+        <button
+          class="ballot-option"
+          type="button"
+          data-id="air-quality-app"
+          data-title="Air Quality App"
+          data-category="Clubs & Tech"
+        >
+          <span class="vote-circle">✓</span>
+
+          <span class="ballot-copy">
+            <strong>Air Quality App</strong>
+
+            <small>
+              An application and/or website dashboard that shows air quality
+              data, maps areas of the city with asthma rates and provides
+              real-time alerts to support young people affected by asthma.
+            </small>
+          </span>
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <div class="vote-bottom-bar">
+
+    <div class="bottom-selection-count">
+      <strong id="bottomCount">0 of 5</strong>
+      <span>ideas selected</span>
+    </div>
+
+    <button
+      type="button"
+      id="reviewButton"
+      class="review-button"
+    >
+      Review My Choices →
+    </button>
+
+  </div>
+
+
+  <script src="js/vote.js"></script>
+
+</body>
+</html>

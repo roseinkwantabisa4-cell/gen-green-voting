@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gen Green Newark | I Voted Green</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="badge-body">
+
+  <!-- =====================================
+       FIXED HEADER
+  ====================================== -->
+
+  <header class="badge-header">
+
+    <div class="badge-header-left">
+      Survey Complete ✓
+    </div>
+
+    <img
+      src="images/gen-green.png"
+      alt="Gen Green"
+      class="badge-logo"
+    />
+
+    <div class="badge-step">
+      Step 4 of 4
+    </div>
+
+  </header>
+
+
+  <!-- =====================================
+       MAIN
+  ====================================== -->
+
+<main class="badge-main">
+
+  <section class="badge-intro">
+
+    <p class="badge-eyebrow">
+      YOU DID IT!
+    </p>
+
+    <h1>
+      Your Vote Is In
+    </h1>
+
+    <p>
+      Personalize your “I Voted Green” badge before sharing it.
+    </p>
+
+  </section>
+
+
+  <!-- =====================================
+       PERSONALIZATION AREA
+  ====================================== -->
+
+  <section class="badge-personalize">
+
+    <div class="personalize-field">
+
+      <label for="voterName">
+        Your Name
+      </label>
+
+      <input
+        type="text"
+        id="voterName"
+        placeholder="Enter your name"
+        maxlength="30"
+      />
+
+    </div>
+
+
+    <div class="personalize-field">
+
+      <label for="voterPhoto">
+        Your Photo
+      </label>
+
+      <input
+        type="file"
+        id="voterPhoto"
+        accept="image/*"
+      />
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       DIGITAL BADGE
+  ====================================== -->
+
+<section class="official-badge" id="digitalBadge">
+
+  <!-- TOP LOGO -->
+  <div class="official-badge-top">
+    <img
+      src="images/gen-green.png"
+      alt="Gen Green"
+      class="official-gen-logo"
+    />
+
+    <h2>
+      OFFICE OF SUSTAINABILITY, RESILIENCE<br>
+      & COMMUNITY TRANSFORMATION
+    </h2>
+
+    <h3>
+      CITY OF NEWARK
+    </h3>
+  </div>
+
+
+  <!-- MAIN BADGE CONTENT -->
+  <div class="official-badge-middle">
+
+    <!-- LEFT: PHOTO -->
+    <div class="official-photo-area">
+
+      <div class="official-photo-frame">
+
+        <img
+          id="badgePhoto"
+          src="images/default-avatar.png"
+          alt="Voter photo"
+          class="official-photo"
+        />
+
+      </div>
+
+
+      <div
+        id="badgeName"
+        class="official-voter-name"
+      >
+        Your Name
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT: MESSAGE -->
+    <div class="official-vote-message">
+
+      <div class="official-voted-text">
+        I voted
+      </div>
+
+      <div class="official-green-text">
+        Green!
+      </div>
+
+      <div class="official-tagline">
+        My Voice. My Newark. My Future
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- BOTTOM LOGOS -->
+  <div class="official-badge-footer">
+
+   
+
+    <img
+      src="images/newark-logo.png"
+      alt="City of Newark Mayor Ras J. Baraka"
+      class="official-footer-logo city-logo"
+    />
+
+
+ <img
+      src="images/mayor-logo.png"
+      alt="City of Newark Seal"
+      class="official-footer-logo seal-logo"
+    />
+
+
+
+    <img
+      src="images/sustainability-logo.png"
+      alt="Office of Sustainability"
+      class="official-footer-logo sustainability-badge-logo"
+    />
+
+    <img
+      src="images/gen-green.png"
+      alt="Gen Green"
+      class="official-footer-logo gen-footer-badge-logo"
+    />
+
+  </div>
+
+</section>
+
+
+  <!-- =====================================
+       FIXED FOOTER
+  ====================================== -->
+
+  <footer class="badge-footer">
+
+    <div class="badge-footer-inner">
+
+      <div class="badge-footer-status">
+        <strong>Complete</strong>
+        <span>Your vote has been recorded</span>
+      </div>
+
+
+      <div class="badge-footer-message">
+        Thanks for helping Newark grow greener.
+      </div>
+
+
+      <div class="badge-footer-actions">
+
+        <button
+          type="button"
+          id="shareBadgeButton"
+          class="share-badge-button"
+        >
+          Share Badge
+        </button>
+
+
+        <button
+          type="button"
+          id="finishButton"
+          class="finish-button"
+        >
+          Finish
+        </button>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="js/badge.js"></script>
+
+</body>
+</html>

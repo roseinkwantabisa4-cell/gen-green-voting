@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gen Green Newark</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <main class="landing-page">
+
+    <!-- ======================================
+         LEFT SIDE
+    ======================================= -->
+
+    <section class="landing-left">
+
+      <div class="left-content">
+
+        <!-- GEN GREEN LOGO -->
+        <img
+          src="images/gen-green.png"
+          alt="Gen Green"
+          class="main-logo"
+        />
+
+
+        <!-- SMALL HEADING -->
+        <p class="youth-voting">
+          Newark’s Youth Voting
+        </p>
+
+
+        <!-- INTRO -->
+        <p class="intro-text">
+          Help shape a greener Newark by choosing the
+          <strong>5 ideas</strong>
+          you would most like to see happen in your community.
+        </p>
+
+
+        <!-- STEPS -->
+        <div class="steps-row">
+
+          <div class="step-card">
+
+            <div class="step-number">
+              1
+            </div>
+
+            <div class="step-content">
+              <h3>Explore</h3>
+
+              <p>
+                Read the ideas for a greener Newark.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="step-card">
+
+            <div class="step-number">
+              2
+            </div>
+
+            <div class="step-content">
+              <h3>Choose 5</h3>
+
+              <p>
+                Select your 5 favorite ideas.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="step-card">
+
+            <div class="step-number">
+              3
+            </div>
+
+            <div class="step-content">
+              <h3>Your Voice</h3>
+
+              <p>
+                Complete a survey and get your voting badge.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- START BUTTON -->
+
+        <a href="vote.html" class="start-button">
+          Start Voting
+        </a>
+
+
+        <!-- BOTTOM LOGOS -->
+
+        <div class="bottom-logos">
+
+          
+
+          <img
+            src="images/newark-logo.png"
+            alt="Newark Mayor Ras J. Baraka"
+            class="footer-logo newark-footer-logo"
+          />
+
+            <img
+            src="images/mayor-logo.png"
+            alt="Newark Mayor Ras J. Baraka"
+            class="footer-logo newark-footer-logo"
+          />
+
+          <img
+            src="images/sustainability-logo.png"
+            alt="Newark Office of Sustainability"
+            class="footer-logo office-footer-logo"
+          />
+
+          <img
+            src="images/gen-green.png"
+            alt="Gen Green"
+            class="footer-logo gen-footer-logo"
+          />
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ======================================
+         RIGHT SIDE
+    ======================================= -->
+
+    <section class="landing-right">
+
+      <div class="image-showcase">
+
+
+        <!-- IMAGE 1 -->
+
+        <div class="flip-card">
+
+          <img
+            src="images/landing-1.jpg"
+            alt="Gen Green activity"
+            class="showcase-image active"
+          />
+
+
+          <img
+            src="images/landing-2.jpg"
+            alt="Gen Green activity"
+            class="showcase-image"
+          />
+
+
+          <img
+            src="images/landing-3.jpg"
+            alt="Gen Green activity"
+            class="showcase-image"
+          />
+
+
+               <img
+            src="images/landing-4.jpg"
+            alt="Gen Green activity"
+            class="showcase-image"
+          />
+
+          <img
+            src="images/landing-5.jpg"
+            alt="Gen Green activity"
+            class="showcase-image"
+          />
+
+        </div>
+
+
+
+
+
+        <!-- IMAGE 3 -->
+
+        <div class="flip-card">
+
+          <img
+            src="images/landing-7.jpg"
+            alt="Gen Green activity"
+            class="showcase-image active"
+          />
+
+          <img
+            src="images/landing-8.jpg"
+            alt="Gen Green activity"
+            class="showcase-image"
+          />
+
+          <img
+            src="images/landing-9.jpg"
+            alt="Gen Green activity"
+            class="showcase-image"
+          />
+
+               <img
+            src="images/landing-6.jpg"
+            alt="Gen Green activity"
+            class="showcase-image"
+          />
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <script>
+
+    /* =========================================
+       ROTATING LANDING PAGE IMAGES
+    ========================================== */
+
+    const cards = document.querySelectorAll(".flip-card");
+
+    cards.forEach((card, cardIndex) => {
+
+      const images = card.querySelectorAll(".showcase-image");
+
+      let currentImage = 0;
+
+
+      /*
+        Each card begins at a slightly different
+        time so all three don't switch together.
+      */
+
+      setTimeout(() => {
+
+        setInterval(() => {
+
+          images[currentImage].classList.remove("active");
+
+          currentImage++;
+
+          if (currentImage >= images.length) {
+            currentImage = 0;
+          }
+
+          images[currentImage].classList.add("active");
+
+        }, 4000);
+
+      }, cardIndex * 1000);
+
+    });
+
+  </script>
+
+
+</body>
+</html>
