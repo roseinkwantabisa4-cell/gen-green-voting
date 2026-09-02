@@ -4775,119 +4775,124 @@ body::before {
 @media (min-width: 901px) and (max-width: 1180px) {
 
   .landing-page {
-    grid-template-columns:
-      45%
-      55%;
+    grid-template-columns: 46% 54%;
+    min-height: 100vh;
+  }
+
+  .landing-left,
+  .landing-right {
+    min-height: 100vh;
   }
 
   .left-content {
     max-width: 520px;
-
-    padding:
-      30px
-      30px
-      25px;
+    padding: 35px 30px 25px;
   }
 
-  /* LOGO */
-
   .main-logo {
-    width: 260px;
-    height: 125px;
-
-    margin-bottom: 12px !important;
+    width: 270px;
+    height: 135px;
+    margin-bottom: 15px !important;
   }
 
   .youth-voting {
     font-size: 20px;
-
-    margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 32px;
   }
 
   .intro-text {
-    max-width: 440px;
-
+    max-width: 430px;
     font-size: 16px;
-
-    margin-bottom: 38px;
+    line-height: 1.4;
+    margin-bottom: 55px;
   }
 
-  /* KEEP STEPS VERTICAL IN LANDSCAPE */
-
   .steps-row {
+    width: 100%;
     max-width: 390px;
 
     grid-template-columns: 1fr;
 
-    gap: 12px;
-
-    margin-bottom: 35px;
+    gap: 14px;
+    margin-bottom: 45px;
   }
 
   .step-card {
-    min-height: 78px;
+    min-height: 80px;
+    padding: 14px 16px;
+  }
 
-    padding: 13px 15px;
+  .step-content h3 {
+    font-size: 15px;
+  }
+
+  .step-content p {
+    font-size: 11px;
   }
 
   .start-button {
-    width: 225px;
-
-    margin-bottom: 30px;
+    width: 230px;
+    font-size: 19px;
+    margin-bottom: auto;
   }
 
   /* FOOTER */
 
   .bottom-logos {
-    gap: 10px;
-
-    padding-top: 20px;
+    width: 100%;
+    gap: 8px;
+    padding-top: 30px;
   }
 
   .newark-footer-logo {
-    width: 65px;
+    width: 60px;
     height: 55px;
   }
 
   .small-logo {
-    width: 120px;
-    height: 65px;
+    width: 105px;
+    height: 60px;
   }
 
   .office-footer-logo {
-    width: 75px;
-    height: 65px;
+    width: 70px;
+    height: 60px;
   }
 
   .gen-footer-logo {
     width: 75px;
-    height: 65px;
+    height: 60px;
   }
 
-  /* RIGHT SIDE */
+  /* RIGHT IMAGE AREA */
 
   .landing-right {
-    padding:
-      40px
-      30px;
+    padding: 60px 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .image-showcase {
     width: 100%;
+    max-width: 520px;
 
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-
-    gap: 14px;
+    display: block;
   }
 
   .flip-card {
-    max-height: 500px;
+    width: 100%;
+    max-width: 500px;
+
+    aspect-ratio: 4 / 5;
+
+    margin: 0 auto;
   }
 
+  /* show only one rotating card on iPad landscape */
+
   .flip-card:last-child {
-    display: block;
+    display: none !important;
   }
 
 }
