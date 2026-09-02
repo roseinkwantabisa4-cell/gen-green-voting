@@ -584,16 +584,16 @@ body::before {
 
 
   .main-logo {
-  width: 245px;
-  height: 100px;
-  margin-bottom: 18px;
-}
+    width: 245px;
+    height: 100px;
+    margin-bottom: 25px !important;
+  }
 
-.youth-voting {
-  font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
+  .youth-voting {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 
 
   .intro-text {
