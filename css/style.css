@@ -4896,3 +4896,185 @@ body::before {
   }
 
 }
+
+
+/* =========================================================
+   IPAD PRO — PORTRAIT
+   Example: 1024 x 1366
+========================================================= */
+
+@media (min-width: 901px) and (max-width: 1180px) and (orientation: portrait) {
+
+  .landing-page {
+    display: block;
+    min-height: 100vh;
+  }
+
+  .landing-left {
+    min-height: auto;
+    width: 100%;
+  }
+
+  .left-content {
+    width: 100%;
+    max-width: 850px;
+    min-height: auto;
+
+    margin: 0 auto;
+
+    padding:
+      45px
+      60px
+      55px;
+  }
+
+  /* MAIN LOGO */
+
+  .main-logo {
+    width: 320px;
+    height: 150px;
+
+    margin-bottom: 18px !important;
+  }
+
+  /* TITLE */
+
+  .youth-voting {
+    font-size: 24px;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  /* INTRO */
+
+  .intro-text {
+    max-width: 700px;
+
+    font-size: 19px;
+    line-height: 1.45;
+
+    margin-bottom: 45px;
+  }
+
+  /* STEPS */
+
+  .steps-row {
+    width: 100%;
+    max-width: 760px;
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-bottom: 45px;
+  }
+
+  .step-card {
+    min-height: 120px;
+
+    padding: 18px 16px;
+  }
+
+  .step-number {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+
+    font-size: 15px;
+  }
+
+  .step-content h3 {
+    font-size: 17px;
+  }
+
+  .step-content p {
+    font-size: 13px;
+  }
+
+  /* START BUTTON */
+
+  .start-button {
+    width: 270px;
+
+    padding: 17px 22px;
+
+    font-size: 21px;
+
+    margin-bottom: 45px;
+  }
+
+  /* LOGOS */
+
+  .bottom-logos {
+    width: 100%;
+    max-width: 720px;
+
+    justify-content: space-around;
+
+    padding-top: 15px;
+  }
+
+  .newark-footer-logo {
+    width: 75px;
+    height: 65px;
+  }
+
+  .small-logo {
+    width: 150px;
+    height: 75px;
+  }
+
+  .office-footer-logo {
+    width: 90px;
+    height: 75px;
+  }
+
+  .gen-footer-logo {
+    width: 90px;
+    height: 75px;
+  }
+
+  /* PHOTO AREA */
+
+  .landing-right {
+    width: 100%;
+    min-height: auto;
+
+    padding:
+      50px
+      70px
+      70px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-showcase {
+    width: 100%;
+    max-width: 820px;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+  }
+
+  .flip-card {
+    width: 100%;
+
+    max-height: none;
+
+    aspect-ratio: 4 / 5;
+  }
+
+  .flip-card:last-child {
+    display: block !important;
+  }
+
+}
