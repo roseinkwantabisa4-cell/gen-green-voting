@@ -4606,3 +4606,288 @@ body::before {
   }
 
 }
+
+
+
+
+
+/* =========================================
+   IPAD / TABLET — PORTRAIT
+========================================= */
+
+@media (min-width: 751px) and (max-width: 900px) {
+
+  .landing-page {
+    display: block;
+    min-height: 100vh;
+  }
+
+  .landing-left {
+    min-height: auto;
+  }
+
+  .left-content {
+    max-width: 760px;
+    min-height: auto;
+
+    margin: 0 auto;
+
+    padding:
+      35px
+      45px
+      45px;
+  }
+
+  /* LOGO */
+
+  .main-logo {
+    width: 280px;
+    height: 135px;
+
+    margin-bottom: 15px !important;
+  }
+
+  /* TITLE */
+
+  .youth-voting {
+    font-size: 22px;
+
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
+
+  /* INTRO */
+
+  .intro-text {
+    max-width: 620px;
+
+    font-size: 18px;
+    line-height: 1.45;
+
+    margin-bottom: 45px;
+  }
+
+  /* 3 STEPS SIDE BY SIDE */
+
+  .steps-row {
+    max-width: 700px;
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 15px;
+
+    margin-bottom: 45px;
+  }
+
+  .step-card {
+    min-height: 115px;
+
+    padding: 18px 14px;
+  }
+
+  .step-content h3 {
+    font-size: 16px;
+  }
+
+  .step-content p {
+    font-size: 12px;
+  }
+
+  /* BUTTON */
+
+  .start-button {
+    width: 250px;
+
+    font-size: 20px;
+
+    margin-bottom: 45px;
+  }
+
+  /* FOOTER */
+
+  .bottom-logos {
+    max-width: 650px;
+
+    justify-content: space-around;
+
+    padding-top: 20px;
+  }
+
+  .newark-footer-logo {
+    width: 80px;
+    height: 65px;
+  }
+
+  .small-logo {
+    width: 150px;
+    height: 80px;
+  }
+
+  .office-footer-logo {
+    width: 95px;
+    height: 80px;
+  }
+
+  .gen-footer-logo {
+    width: 95px;
+    height: 80px;
+  }
+
+  /* IMAGE SECTION BELOW LANDING CONTENT */
+
+  .landing-right {
+    min-height: auto;
+
+    padding:
+      45px
+      40px;
+  }
+
+  .image-showcase {
+    width: 100%;
+    max-width: 720px;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+  }
+
+  .flip-card {
+    aspect-ratio: 1 / 1.05;
+
+    max-height: 420px;
+  }
+
+  .flip-card:last-child {
+    display: block;
+  }
+
+}
+
+
+
+/* =========================================
+   IPAD / TABLET — LANDSCAPE
+========================================= */
+
+@media (min-width: 901px) and (max-width: 1180px) {
+
+  .landing-page {
+    grid-template-columns:
+      45%
+      55%;
+  }
+
+  .left-content {
+    max-width: 520px;
+
+    padding:
+      30px
+      30px
+      25px;
+  }
+
+  /* LOGO */
+
+  .main-logo {
+    width: 260px;
+    height: 125px;
+
+    margin-bottom: 12px !important;
+  }
+
+  .youth-voting {
+    font-size: 20px;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .intro-text {
+    max-width: 440px;
+
+    font-size: 16px;
+
+    margin-bottom: 38px;
+  }
+
+  /* KEEP STEPS VERTICAL IN LANDSCAPE */
+
+  .steps-row {
+    max-width: 390px;
+
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 35px;
+  }
+
+  .step-card {
+    min-height: 78px;
+
+    padding: 13px 15px;
+  }
+
+  .start-button {
+    width: 225px;
+
+    margin-bottom: 30px;
+  }
+
+  /* FOOTER */
+
+  .bottom-logos {
+    gap: 10px;
+
+    padding-top: 20px;
+  }
+
+  .newark-footer-logo {
+    width: 65px;
+    height: 55px;
+  }
+
+  .small-logo {
+    width: 120px;
+    height: 65px;
+  }
+
+  .office-footer-logo {
+    width: 75px;
+    height: 65px;
+  }
+
+  .gen-footer-logo {
+    width: 75px;
+    height: 65px;
+  }
+
+  /* RIGHT SIDE */
+
+  .landing-right {
+    padding:
+      40px
+      30px;
+  }
+
+  .image-showcase {
+    width: 100%;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+  }
+
+  .flip-card {
+    max-height: 500px;
+  }
+
+  .flip-card:last-child {
+    display: block;
+  }
+
+}
